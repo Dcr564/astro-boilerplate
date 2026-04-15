@@ -1,0 +1,135 @@
+/* CONTEXTO ABOGADO */
+
+.abogado {
+  background: #0B0B0B;
+  color: white;
+}
+
+/* HEADER */
+
+.header {
+  background: #0B0B0B;
+  border-bottom: 1px solid #222;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  color: #C9A96E;
+  font-weight: bold;
+}
+
+.nav a {
+  margin-left: 20px;
+  color: white;
+}
+
+.nav a:hover {
+  color: #C9A96E;
+}
+
+/* CONTENEDOR */
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* HERO */
+
+.hero {
+  padding: 100px 20px;
+  background: linear-gradient(180deg, #0B0B0B, #111);
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+}
+
+.hero p {
+  color: #ccc;
+}
+
+/* BOTÓN */
+
+.btn {
+  background: #C9A96E;
+  color: black;
+  padding: 14px 24px;
+  border-radius: 6px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+/* IMAGEN */
+
+.hero img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* SERVICIOS */
+
+.services {
+  padding: 80px 20px;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+}
+
+.card {
+  background: #111;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid #222;
+}
+
+/* CTA */
+
+.cta {
+  background: #C9A96E;
+  color: black;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* CONTACTO */
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* RESPONSIVE */
+
+@media (min-width: 768px) {
+  .hero-content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .hero img {
+    width: 40%;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

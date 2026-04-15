@@ -1,0 +1,44 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import "../../styles/abogado.css";
+---
+
+<BaseLayout pageClass="abogado">
+
+<Header logo="Abogado Penal Madrid" basePath="/abogado" />
+
+<main class="container">
+
+<h1>Servicios legales</h1>
+
+<div class="grid">
+
+<div class="card">
+<h3>Defensa penal</h3>
+<p>Representación completa</p>
+</div>
+
+<div class="card">
+<h3>Asistencia en comisaría</h3>
+<p>Desde el primer momento</p>
+</div>
+
+<div class="card">
+<h3>Juicios</h3>
+<p>Estrategia y defensa</p>
+</div>
+
+<div class="card">
+<h3>Urgencias</h3>
+<p>Disponible 24h</p>
+</div>
+
+</div>
+
+</main>
+
+<Footer />
+
+</BaseLayout>

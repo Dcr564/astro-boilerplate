@@ -1,0 +1,142 @@
+/* BASE */
+
+.reformas {
+  background: #f5f5f5;
+  color: #111;
+}
+
+/* HEADER */
+
+.header {
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  color: #1E3A8A;
+}
+
+/* HERO */
+
+.hero {
+  padding: 80px 20px;
+  background: white;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+.carousel {
+  width: 50%;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  color: #555;
+}
+
+/* BOTÓN */
+
+.btn {
+  background: #1E3A8A;
+  color: white;
+  padding: 14px 24px;
+  border-radius: 6px;
+}
+
+/* IMAGEN */
+
+.hero img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* SERVICIOS */
+
+.services {
+  padding: 60px 20px;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+/* CTA */
+
+.cta {
+  background: #1E3A8A;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* RESPONSIVE */
+
+@media (min-width: 768px) {
+  .hero-content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .hero img {
+    width: 45%;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* BEFORE / AFTER */
+
+.before-after {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.before-after h2 {
+  margin-bottom: 30px;
+}
+
+.before-after-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* CAROUSEL */
+.carousel {
+  width: 600%;
+  height: 400px; /* 🔥 más grande */
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.carousel img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.carousel img.active {
+  opacity: 1;
+}

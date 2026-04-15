@@ -1,9 +1,17 @@
-<header class="header">
-  <strong>MiEmpresa</strong>
+---
+const { logo = "MiEmpresa", basePath = "" } = Astro.props;
+---
 
-  <nav class="nav">
-    <a href="/">Inicio</a>
-    <a href="/servicios">Servicios</a>
-    <a href="/contacto">Contacto</a>
-  </nav>
+<header class="header">
+  <div class="container header-inner">
+
+    <a href={`${basePath}/`} class="logo">{logo}</a>
+
+    <nav class="nav">
+      <a href={`${basePath}/`}>Inicio</a>
+      <a href={`${basePath}/servicios/`}>Servicios</a>
+      <a href={`${basePath}/contacto/`}>Contacto</a>
+    </nav>
+
+  </div>
 </header>

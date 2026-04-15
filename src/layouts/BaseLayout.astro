@@ -1,15 +1,16 @@
 ---
 import "../styles/global.css";
+const { pageClass = "" } = Astro.props;
 ---
 
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Servicio profesional en ciudad</title>
-    <meta name="description" content="Servicio profesional rápido y fiable en tu ciudad. Contacta ahora." />
+    <title>Servicio profesional</title>
   </head>
-  <body>
+
+  <body class={pageClass}>
     <slot />
   </body>
 </html>

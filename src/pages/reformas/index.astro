@@ -1,0 +1,85 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import "../../styles/reformas.css";
+---
+
+<BaseLayout pageClass="reformas">
+
+<Header logo="Reformas Madrid Pro" basePath="/reformas" />
+
+<script is:inline>
+  window.addEventListener("DOMContentLoaded", () => {
+    const images = document.querySelectorAll("#carousel img");
+
+    if (!images.length) return; // seguridad
+
+    let index = 0;
+
+    setInterval(() => {
+      images[index].classList.remove("active");
+      index = (index + 1) % images.length;
+      images[index].classList.add("active");
+    }, 2500);
+  });
+</script>
+
+<main>
+
+<section class="hero">
+  <div class="container hero-content">
+
+    <div>
+      <h1>Reformas integrales en Madrid</h1>
+      <p>Transformamos tu vivienda con calidad y rapidez</p>
+
+      <a href="/reformas/contacto/" class="btn">Pide presupuesto</a>
+
+      <p>✔ Presupuesto gratis · ✔ Sin compromiso</p>
+    </div>
+
+    <div class="carousel" id="carousel">
+
+        <img src="/images/reforma1.png" class="active" />
+        <img src="/images/reforma2.png" />
+        <img src="/images/reforma3.png" />
+
+    </div>
+
+  </div>
+</section>
+
+<section class="services container">
+  <h2>Servicios</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>Reformas integrales</h3>
+      <p>Transformación completa de viviendas</p>
+    </div>
+
+    <div class="card">
+      <h3>Cocinas</h3>
+      <p>Diseño moderno y funcional</p>
+    </div>
+
+    <div class="card">
+      <h3>Baños</h3>
+      <p>Renovación completa y eficiente</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Solicita tu presupuesto ahora</h2>
+  <a href="/reformas/contacto/" class="btn">Contactar</a>
+</section>
+
+</main>
+
+<Footer />
+
+</BaseLayout>

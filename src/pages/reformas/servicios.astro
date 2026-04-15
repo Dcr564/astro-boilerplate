@@ -1,0 +1,50 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import "../../styles/reformas.css";
+---
+
+<BaseLayout pageClass="reformas">
+
+<Header logo="Reformas Madrid Pro" basePath="/reformas" />
+
+<main class="container">
+
+  <h1>Servicios de reformas</h1>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>Reformas completas</h3>
+      <p>Desde cero hasta llave en mano</p>
+    </div>
+
+    <div class="card">
+      <h3>Cocinas</h3>
+      <p>Diseño personalizado</p>
+    </div>
+
+    <div class="card">
+      <h3>Baños</h3>
+      <p>Modernización total</p>
+    </div>
+
+  </div>
+
+  <!-- 🔥 NUEVA SECCIÓN VISUAL -->
+  <section class="before-after">
+    <h2>Antes y después de nuestros trabajos</h2>
+
+    <img 
+      src="/images/reformas-antes-despues.png" 
+      alt="Reformas antes y después"
+      class="before-after-img"
+    />
+  </section>
+
+</main>
+
+<Footer />
+
+</BaseLayout>

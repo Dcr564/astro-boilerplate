@@ -1,0 +1,29 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import "../../styles/reformas.css";
+---
+
+<BaseLayout pageClass="reformas">
+
+<Header logo="Reformas Madrid Pro" basePath="/reformas" />
+
+<main class="container contact">
+
+<h1>Contacto</h1>
+
+<p>Llámanos: <strong>600 456 456</strong></p>
+
+<form>
+<input type="text" placeholder="Nombre" required />
+<input type="email" placeholder="Email" required />
+<textarea placeholder="¿Qué quieres reformar?"></textarea>
+<button class="btn">Enviar</button>
+</form>
+
+</main>
+
+<Footer />
+
+</BaseLayout>

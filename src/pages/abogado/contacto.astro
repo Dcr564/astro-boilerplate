@@ -1,0 +1,29 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import "../../styles/abogado.css";
+---
+
+<BaseLayout pageClass="abogado">
+
+<Header logo="Abogado Penal Madrid" basePath="/abogado" />
+
+<main class="container contact">
+
+<h1>Contacto</h1>
+
+<p>Llámanos: <strong>600 123 123</strong></p>
+
+<form>
+<input type="text" placeholder="Nombre" required />
+<input type="email" placeholder="Email" required />
+<textarea placeholder="Describe tu caso"></textarea>
+<button class="btn">Enviar</button>
+</form>
+
+</main>
+
+<Footer />
+
+</BaseLayout>
